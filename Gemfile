@@ -1,5 +1,11 @@
 source 'https://rubygems.org'
 
+#devise gem
+gem 'devise'
+#bootstap
+gem 'twitter-bootstrap-rails'
+gem 'devise-bootstrap-views'
+
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
