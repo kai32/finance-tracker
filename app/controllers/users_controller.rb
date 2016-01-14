@@ -1,8 +1,13 @@
 class UsersController < ApplicationController
   
   def my_portfolio
-    @stocks = current_user.stocks
+    @user_stocks = current_user.user_stocks
     @user = current_user
+    @stocks = current_user.stocks
+    @stock_to_user_stocks_mapping = {}
+    @user_stocks.each do |user_stock|
+      @stock_to_user_stocks_mapping[user_stock.stock_id] = user_stock.id
+    end
   end
   
 end
