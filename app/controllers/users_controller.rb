@@ -10,4 +10,8 @@ class UsersController < ApplicationController
     end
   end
   
+  def my_friends
+    
+  end
+  
 end
